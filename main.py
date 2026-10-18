@@ -1,4 +1,5 @@
-from books import show_books
+from books import show_books, save_books, load_books
+
 
 
 
@@ -7,7 +8,7 @@ print("Welcome", name)
 print( )
 
 
-books = []
+books = load_books()
 count = int(input("How many book do you want to add? "))
 for i in range(count):
     book= input ("Enter the book name: ")
@@ -15,4 +16,6 @@ for i in range(count):
 
 
 show_books(books)
+save_books(books)
+load_books()
 
