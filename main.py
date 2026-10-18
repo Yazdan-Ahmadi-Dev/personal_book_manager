@@ -1,11 +1,28 @@
 from books import show_books, save_books, load_books
+from dotenv import load_dotenv
+import os
 
 
+load_dotenv()
 
 
 name = input("Hello, enter your name: ")
 print("Welcome", name)
 print( )
+
+
+admin_mode = input("Do you want to enter admon mode (yes/no)?  ")
+
+if admin_mode == "yes":
+    admin_password = input("Enter admin password:  ")
+    if admin_password == os.getenv("admin_password"):
+        print("Admin mode is activated")
+    else:
+        print("Wrong password")
+
+print( )
+
+
 
 
 books = load_books()
