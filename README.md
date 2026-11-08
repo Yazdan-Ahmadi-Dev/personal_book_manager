@@ -1,5 +1,5 @@
 # 📚 Personal Book Manager
-!bage
+![Static Badge](https://img.shields.io/badge/python-blue?logo=python&logoColor=white)
 
 
 A simple personal book management application built with *Python. It allows users to add multiple books, view their book collection, and save book information so it remains available even after closing the program.
@@ -13,6 +13,15 @@ A simple personal book management application built with *Python. It allows user
 - Handle missing JSON files
 - Admin Mode with password protection
 - Secure password configuration using environment variables
+- add task priority 
+
+
+## task priority
+each task can have one of these priority levels:
+- low
+- medium
+- high
+
 
 ## 🛠️ Requirements
 
